@@ -1,0 +1,17 @@
+{
+    "name": "fidk/ai-update",
+    "description": "AI update generator met RAG-integratie voor fotografen",
+    "require": {
+        "openai-php/client": "^0.12.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "symfony/dom-crawler": "^6.0",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "FIDK\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

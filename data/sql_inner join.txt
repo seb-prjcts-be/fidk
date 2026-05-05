@@ -1,0 +1,24 @@
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+
+SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+FROM ((Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
+
+
+
+//$conn1->real_query("SELECT * FROM tbl_artists INNER JOIN tbl_series ON artist_pk = serie_artist_fk ORDER BY artist_name,serie_name");
+
+
+SELECT * 
+FROM tbl_artists 
+INNER JOIN tbl_series ON artist.pk = serie_artist_fk
+WHERE serie_artist_fk=1
+
+
+
+
+

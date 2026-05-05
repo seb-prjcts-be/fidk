@@ -1,0 +1,45 @@
+# === Secrets / credentials (NIET committen) ===
+.env
+.env.*
+!.env.example
+
+# Database connection files (hardcoded passwords + hosts)
+**/connection_inc.php
+**/connection_close_inc.php
+**/functions_inc.php
+
+# Sensitive data folders
+data/FALSE_*/
+data/backups/
+
+# Database dumps + queries
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# === OS / editor cruft ===
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# === Logs ===
+*.log
+
+# === Backups ===
+*.bak
+*.backup
+*_BACKUP/
+*_BACKUP_*/
+
+# === Composer ===
+vendor/
+composer.lock
+
+# === Uploads / runtime data (te groot voor git, productie heeft eigen) ===
+uploads/
+tmp/
+cache/
